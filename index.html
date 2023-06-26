@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon.tkag.ico"
+      type="image/x-icon"
+    />
+    <title>Thyssenkrupp - Rede Interativa</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo-img"
+        src="images/logo-thyssenkrupp.png"
+        alt="Logo da Empresa Thyssenkrupp"
+      />
+      <div class="login-header">
+        <a href="#" class="login-button"><i class="ph ph-user"></i>Entrar</a>
+      </div>
+    </header>
+
+    <div class="navbar">
+      <a href="#" class="home-button"
+        ><i class="ph-fill ph-house"></i>Principal</a
+      >
+      <div class="searchbox">
+        <form class="search-form" action="/">
+          <input type="text" placeholder="Buscar.." name="buscar" />
+          <button class="search-button" type="submit">
+            <i class="ph ph-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="responsive-menu">
+      <button onclick="toggleLeftMenu()">
+        <i class="ph-fill ph-arrow-fat-right"></i>
+      </button>
+      <button onclick="toggleRightMenu()">
+        <i class="ph-fill ph-arrow-fat-left"></i>
+      </button>
+    </div>
+
+    <div class="flex-container">
+      <div class="left-sidebar">
+        <div class="dropdown">
+          <button class="dropbtn">Fique por Dentro</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Jornal</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Newspaper</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Daproh</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Previsão do Tempo</a
+            >
+            <a class="left-sidebar-links" href=""
+              ><i class="ph ph-caret-right"></i>Tradutor</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Calendários</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Calendários</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Programas</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Participação nos Resultados -
+              PPR</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>5S</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Programa de Sugestões</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Normas</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Lista Mestra</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>NKCs</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Aprovação Online - CAIs</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Procedimento Introdução/Revisão
+              de NKCs Rev.02</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Departamentos</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Sistema de Gestão de Energia -
+              SGEn</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>RH</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Comum</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Engenharia Industrial</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Contabilidade</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Forjaria</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Gestão SMS</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Planejamento Econômico</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Tecnologia da Informação</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Tesouraria</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Sistemas de Produção e
+              Qualidade</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Logística</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Vendas</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Suprimentos</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Colaboradores</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Bem-vindos</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Cidadania</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Programa de Voluntariado</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Esporte e Lazer</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>ADCTK</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Formulários</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Padrão de Assinatura de
+              E-mail</a
+            >
+          </div>
+        </div>
+        <br />
+        <div class="dropdown">
+          <button class="dropbtn">Matriz de Requisitos</button>
+          <div class="dropdown-content">
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - AJ</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - CT</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - EI</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - EP</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - FI</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - FM</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - LI</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - PD</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - RH</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - SQ</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - SU</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - TI</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - UC</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - UV</a
+            >
+            <a class="left-sidebar-links" href="#"
+              ><i class="ph ph-caret-right"></i>Matriz de Requisitos - VE</a
+            >
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeLeft()"
+          >&times;</a
+        >
+      </div>
+
+      <main class="main-content">
+        <section class="warnings">
+          <h2 class="main-subtitle">Avisos</h2>
+          <hr />
+          <div class="main-content-img">
+            <img
+              src="images/i9.jpg"
+              alt="Imagem para promover sugestões de melhoria no site da Rede Interativa"
+            />
+          </div>
+        </section>
+
+        <section class="links">
+          <h2 class="main-subtitle">Links</h2>
+          <hr />
+          <div class="link-box-grid">
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">Cadastre-se</a>
+            </div>
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">TK best - Pl@za</a>
+            </div>
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">SAP</a>
+            </div>
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">Manager Desktop</a>
+            </div>
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">Intranet Grupo TK</a>
+            </div>
+            <div class="linkbox-grid-item">
+              <a class="grid-links" href="#">Nosso Site na Internet</a>
+            </div>
+            <div class="linkbox-grid-item two-columns">
+              <a class="grid-links" href="#">Bradesco</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <h2 class="main-subtitle">Serviços</h2>
+          <hr />
+          <div class="services-grid">
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">CAK</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Lista Telefônica</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Itinerário de Ônibus</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Abertura de Chamado</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Utilidades</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Cardápios</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Empréstimo de Equipamentos</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#"
+                >Reset/Desbloqueio de usuário SAP</a
+              >
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#"
+                >Solicitação de acesso a rede (Drive G)</a
+              >
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Desvio & Incidente</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#"
+                >Ficha de Observação Comportamental</a
+              >
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Criação de Pasta - Comum</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Concurso de Fotos - Regulamento</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Lúmen</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Lista Mestra de FISPQs</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Central de Softwares</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Solicitação de VPN</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Contador - Projetos Mecânicos</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Solicitação de Transporte</a>
+            </div>
+            <div class="services-grid-item">
+              <a class="grid-links" href="#">Portal de Treinamentos</a>
+            </div>
+            <div class="services-grid-item two-columns">
+              <a class="grid-links" href="#"
+                >Telefonia - Manual Audio-Conferência</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="help">
+          <h2 class="main-subtitle">Dúvidas</h2>
+          <hr />
+          <div class="contact">
+            <p>Dúvidas em relação à Rede Interativa:</p>
+            <p>
+              Entre em contato nos ramais: <strong>9810/9811</strong> ou pelo
+              e-mail:
+              <a href="mailto:comunicacao-campolimpo@thyssenkrupp.com"
+                >comunicacao-campolimpo@thyssenkrupp.com</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <section class="survey">
+          <h2 class="main-subtitle">Enquete da Semana</h2>
+          <hr />
+          <div class="polls">
+            <p>Em breve nova enquete</p>
+          </div>
+        </section>
+      </main>
+
+      <div class="right-sidebar">
+        <section class="mural">
+          <h2 class="main-subtitle">Mural</h2>
+          <hr />
+          <div class="right-sidebar-img">
+            <img
+              src="images/logo.gif"
+              alt="Imagem com o Logo da Rede Interativa"
+            />
+          </div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >FiqueSabendo - Percentual TKPREV</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p><a class="slideshow-links" href="#">Percentual TKPREV</a></p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Plano continuidade de negocio</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#">Corretora de Seguros</a>
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Código de conduta - TK para o Brasil</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Circular TK Compliance - Anistia</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Como Recuperar a Senha do Work Net</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href=""
+                  >FiqueSabendo - Contribuição Sindical</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Holerith Bradesco - Instruções</a
+                >
+              </p>
+            </div>
+
+            <div class="mySlides fade">
+              <p>
+                <a class="slideshow-links" href="#"
+                  >Alteração de Assinatura de E-mails</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+          <div class="highlights">
+            <p><a href="#">Outros Destaques</a></p>
+          </div>
+        </section>
+        <section class="accordion-menu">
+          <button class="accordion">Missão</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">Nossa Missão</a>
+            </p>
+          </div>
+          <button class="accordion">Código de Conduta</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">Código de Conduta Thyssenkrupp</a>
+            </p>
+          </div>
+          <button class="accordion">Compliance</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">Programa de Compliance</a>
+            </p>
+          </div>
+          <button class="accordion">Políticas</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">Política Energética</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Política de Qualidade - Bercosul</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Política de SMS</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Qualidade</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Segurança da Informação</a>
+            </p>
+          </div>
+          <button class="accordion">Endereços</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">TK Metalúrgica</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">TK no Brasil</a>
+            </p>
+          </div>
+          <button class="accordion">Tecnologia da Informação</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#">Instruções sobre e-mail</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">ITM - Regras Gerais</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Central de Software - Como usar</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Reset e Desbloqueio automático de usuário SAP</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Reset e Desbloqueio automático de usuário O365</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Service Desk</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Impressoras CT-TKMCL</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Skype for Business</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Procedimento para uso do FileExchange</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Plano de Manutenção TI</a>
+            </p>
+          </div>
+          <button class="accordion">Telefonia</button>
+          <div class="panel">
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Código para ligação entre plantas</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Manual do Usuario - iPhone</a>
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Manual do Usuario - Nokia Lumia 635</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Como usar o novo aparelho telefônico</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#"
+                >Novo correio de voz - Manual de procedimento</a
+              >
+            </p>
+            <p class="panel-item">
+              <a class="panel-links" href="#">Dicas Telefonia Móvel</a>
+            </p>
+          </div>
+        </section>
+        <a
+          href="javascript:void(0)"
+          style="color: #00a0f0"
+          class="closebtn"
+          onclick="closeRight()"
+          >&times;</a
+        >
+      </div>
+    </div>
+    <footer><p>Thyssenkrupp Metalúrgica Campo Limpo &copy; 2023</p></footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </body>
+</html>
